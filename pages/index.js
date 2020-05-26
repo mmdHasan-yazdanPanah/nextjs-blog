@@ -1,5 +1,6 @@
+import React from 'react';
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/Layout';
+import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import axios from 'axios';
 import Link from 'next/link';

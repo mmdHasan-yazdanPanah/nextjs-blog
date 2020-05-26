@@ -1,3 +1,4 @@
+import React from 'react';
 import Layout from '../../components/layout';
 import axios from 'axios';
 import Head from 'next/head';
