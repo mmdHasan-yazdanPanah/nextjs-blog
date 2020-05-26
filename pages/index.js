@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import axios from 'axios';
 import Link from 'next/link';
 
-export default function Home({ allPostsDataJson }) {
+export default function Home() {
   return (
     <Layout home>
       <p>
