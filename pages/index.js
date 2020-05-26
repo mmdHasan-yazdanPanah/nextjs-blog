@@ -21,7 +21,7 @@ export default function Home({ allPostsDataJson }) {
   return (
     <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>here</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
