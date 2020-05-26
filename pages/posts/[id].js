@@ -5,7 +5,7 @@ import utilStyles from '../../styles/utils.module.css';
 
 async function getAllPosts() {
   const response = await axios.get(
-    'https://jsonplaceholder.typicode.com/posts'
+    'https://my-json-server.typicode.com/mmdHasan-yazdanPanah/db/posts'
   );
   const resArr = response.data.map((item) => {
     const id = item.id.toString();
