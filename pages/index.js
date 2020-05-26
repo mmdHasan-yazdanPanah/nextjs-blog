@@ -4,26 +4,9 @@ import utilStyles from '../styles/utils.module.css';
 import axios from 'axios';
 import Link from 'next/link';
 
-async function getAllPosts() {
-  const response = await axios.get(
-    'https://jsonplaceholder.typicode.com/posts'
-  );
-  // const resObj;
-  const resArr = response.data.map((item) => {
-    return {
-      params: {
-        id: item.id,
-      },
-    };
-    // return item.id;
-  });
-  // console.log(response);
-  return resArr;
-}
-
 export async function getStaticProps() {
   const allPostsData = await axios.get(
-    'https://jsonplaceholder.typicode.com/posts'
+    'https://my-json-server.typicode.com/mmdHasan-yazdanPanah/db/posts'
   );
   const allPostsDataJson = JSON.stringify(allPostsData.data);
   return {
@@ -35,10 +18,6 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsDataJson }) {
   allPostsDataJson = JSON.parse(allPostsDataJson);
-  // getAllPosts().then((response) => {
-  //   console.log(response);
-  // });
-  // const res = getAllPosts();
 
   return (
     <Layout home>

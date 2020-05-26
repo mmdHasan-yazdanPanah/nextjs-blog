@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postDataRes = await axios.get(
-    `https://jsonplaceholder.typicode.com/posts/${params.id}`
+    `https://my-json-server.typicode.com/mmdHasan-yazdanPanah/db/posts/${params.id}`
   );
   const postDataJson = JSON.stringify(postDataRes.data);
   return {
